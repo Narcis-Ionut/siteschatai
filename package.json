@@ -1,8 +1,8 @@
 {
 	"name": "siteschatai",
-	"description": "A simple chat application powered by Cloudflare Workers AI",
+	"description": "IP-TV.RO assistant chat powered by Cloudflare Workers AI",
 	"cloudflare": {
-		"label": "LLM Chat App",
+		"label": "IP-TV.RO Asistent AI",
 		"products": [
 			"Workers",
 			"Workers AI",

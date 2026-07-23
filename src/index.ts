@@ -1,9 +1,8 @@
 /**
- * LLM Chat Application Template
+ * IP-TV.RO Assistant Chat Worker
  *
- * A simple chat application using Cloudflare Workers AI.
- * This template demonstrates how to implement an LLM-powered chat interface with
- * streaming responses using Server-Sent Events (SSE).
+ * Chat application worker using Cloudflare Workers AI with streaming responses
+ * over Server-Sent Events (SSE).
  *
  * @license MIT
  */
@@ -15,7 +14,7 @@ const MODEL_ID = "@cf/meta/llama-3.1-8b-instruct-fp8";
 
 // Default system prompt
 const SYSTEM_PROMPT =
-	"You are a helpful, friendly assistant. Provide concise and accurate responses.";
+	"You are the IP-TV.RO assistant for IPTV Romania. Be friendly, concise, and accurate, and ask clarifying questions when needed.";
 
 export default {
 	/**

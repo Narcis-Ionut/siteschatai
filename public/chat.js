@@ -1,5 +1,5 @@
 /**
- * LLM Chat App Frontend
+ * IP-TV.RO Assistant Chat Frontend
  *
  * Handles the chat UI interactions and communication with the backend API.
  */
@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant",
 		content:
-			"Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can I help you today?",
+			"Salut! Sunt asistentul IP-TV.RO. Pot ajuta cu intrebari despre IPTV Romania, pachete, compatibilitate si suport.",
 	},
 ];
 let isProcessing = false;
@@ -181,7 +181,7 @@ async function sendMessage() {
 		console.error("Error:", error);
 		addMessageToChat(
 			"assistant",
-			"Sorry, there was an error processing your request.",
+			"Ne pare rau, a aparut o eroare. Te rog incearca din nou.",
 		);
 	} finally {
 		// Hide typing indicator
